@@ -5,15 +5,14 @@
 
 <div class="card text-center">
   <div class="card-header">
-    Featured
   </div>
   <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="{% url 'quiz' %}" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">Привет, {{request.user}}</h5>
+    <p class="card-text">Хочешь проверить уровень своей внимательности и доказать всем, что именно Ты — самый умный и находчивый?</p>
+    <a href="{% url 'quiz' %}" class="btn btn-primary">Пройти тест</a>
   </div>
   <div class="card-footer text-muted">
-    2 days ago
+    Не забудь зарегистрироваться
   </div>
 </div>
 
